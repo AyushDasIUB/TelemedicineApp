@@ -66,7 +66,7 @@ public class FXMLNurseDashboardSceneController implements Initializable {
 
     @FXML
     private void trainingButtonOnAction(ActionEvent event) {
-        loadPage("FXMLNurseTraining&CertificationsScene");
+        loadPage("FXMLNurseTrainingCertificationsScene");
     }
 
     @FXML
