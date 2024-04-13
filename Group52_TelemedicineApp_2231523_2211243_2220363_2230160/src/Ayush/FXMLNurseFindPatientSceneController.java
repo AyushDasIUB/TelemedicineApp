@@ -131,6 +131,7 @@ public class FXMLNurseFindPatientSceneController implements Initializable {
                 String str = selectedPerson.getName()+","+
                              selectedPerson.getId()+","+
                              selectedPerson.getGender()+","+
+                             selectedPerson.getHealth()+","+
                              selectedPerson.getDob()+","+
                              selectedPerson.getEmail()+"\n";
 

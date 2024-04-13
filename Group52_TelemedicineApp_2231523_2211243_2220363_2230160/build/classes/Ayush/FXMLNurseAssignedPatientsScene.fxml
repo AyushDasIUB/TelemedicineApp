@@ -7,34 +7,33 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #E3C7F5;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #E3C7F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ayush.FXMLNurseAssignedPatientsSceneController">
    <children>
       <Label layoutX="203.0" layoutY="51.0" text="Assigned Patients">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <TableView layoutX="25.0" layoutY="117.0" prefHeight="210.0" prefWidth="551.0" style="-fx-background-color: #E3C7F5; -fx-border-color: #3F2B63;">
+      <TableView fx:id="assignedPatientTableView" layoutX="25.0" layoutY="117.0" prefHeight="210.0" prefWidth="551.0" style="-fx-background-color: #E3C7F5; -fx-border-color: #3F2B63;">
         <columns>
-          <TableColumn prefWidth="108.0" text="C1" />
-          <TableColumn prefWidth="116.0" text="C2" />
-            <TableColumn prefWidth="86.0" text="Column X" />
-            <TableColumn prefWidth="102.0" text="Column X" />
-            <TableColumn prefWidth="135.0" text="Column X" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="108.0" text="Name" />
+          <TableColumn fx:id="idTableColumn" prefWidth="86.0" text="ID" />
+            <TableColumn fx:id="genderTableColumn" prefWidth="59.0" text="Gender" />
+            <TableColumn fx:id="dobTableColumn" prefWidth="91.0" text="Date Of Birth" />
+            <TableColumn fx:id="emailTableColumn" prefWidth="203.0" text="Email" />
         </columns>
       </TableView>
-      <Button layoutX="220.0" layoutY="376.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #3F2B63; -fx-background-radius: 20px 20px 20px 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Contact Patient" textFill="WHITE">
+      <Button layoutX="220.0" layoutY="376.0" mnemonicParsing="false" onAction="#contactPatientOnAction" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #3F2B63; -fx-background-radius: 20px 20px 20px 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Contact Patient" textFill="WHITE">
          <font>
             <Font name="Bell MT" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="409.0" layoutY="376.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #3F2B63; -fx-background-radius: 20px 20px 20px 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Patient History" textFill="WHITE">
+      <Button layoutX="409.0" layoutY="376.0" mnemonicParsing="false" onAction="#patientHistoryOnAction" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #3F2B63; -fx-background-radius: 20px 20px 20px 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Patient History" textFill="WHITE">
          <font>
             <Font name="Bell MT" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="39.0" layoutY="376.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #3F2B63; -fx-background-radius: 20px 20px 20px 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Write Report" textFill="WHITE">
+      <Button layoutX="39.0" layoutY="376.0" mnemonicParsing="false" onAction="#writeReportOnAction" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #3F2B63; -fx-background-radius: 20px 20px 20px 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Write Report" textFill="WHITE">
          <font>
             <Font name="Bell MT" size="14.0" />
          </font>
