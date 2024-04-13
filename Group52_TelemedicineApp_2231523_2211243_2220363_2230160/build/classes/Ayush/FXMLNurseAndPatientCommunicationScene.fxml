@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #E3C7F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ayush.FXMLNurseAndPatientCommunicationSceneController">
+   <children>
+      <Label layoutX="162.0" layoutY="35.0" text="Conversing with">
+         <font>
+            <Font name="Bell MT" size="26.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="chatBoxTextArea" layoutX="14.0" layoutY="66.0" prefHeight="237.0" prefWidth="572.0" />
+      <TextArea fx:id="nursemessageTextArea" layoutX="14.0" layoutY="365.0" prefHeight="95.0" prefWidth="572.0" />
+      <Label layoutX="14.0" layoutY="342.0" text="Messenger :">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="433.0" layoutY="470.0" mnemonicParsing="false" onAction="#sendButtonOnAction" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #3F2B63; -fx-background-radius: 20px 20px 20px 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Send" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="24.0" layoutY="470.0" mnemonicParsing="false" onAction="#refreshButtonOnAction" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #3F2B63; -fx-background-radius: 20px 20px 20px 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Refresh" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="patientNameTextField" editable="false" layoutX="347.0" layoutY="38.0" style="-fx-background-color: transperent;" />
+   </children>
+</AnchorPane>
