@@ -14,11 +14,12 @@ public class Interpreter extends User{
     protected int phoneNumber;
     protected String dob;
 
-    public Interpreter(String email, String gender, int phoneNumber, String name, int id, String category, String password) {
+    public Interpreter(String email, String gender, int phoneNumber, String dob, String name, int id, String category, String password) {
         super(name, id, category, password);
         this.email = email;
         this.gender = gender;
         this.phoneNumber = phoneNumber;
+        this.dob = dob;
     }
 
     public String getEmail() {
@@ -89,7 +90,8 @@ public class Interpreter extends User{
     public String toString() {
         return "Interpreter{" + "email=" + email + ", gender=" + gender + ", phoneNumber=" + phoneNumber + ", dob=" + dob + '}';
     }
-    
+
+
     
     
 }

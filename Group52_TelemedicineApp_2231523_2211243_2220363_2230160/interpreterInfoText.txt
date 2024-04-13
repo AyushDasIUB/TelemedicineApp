@@ -1,2 +1,1 @@
-2220364,Interpreter,Goutom Roy,2220364@iub.edu.bd,male,null,546849519
-123456,Interpreter,Rafid,123456@iub.edu.bd,male,null,4516886
+2220364,Interpreter,Goutom,2220364@iub.edu.bd,Male,2000-03-29,995955
