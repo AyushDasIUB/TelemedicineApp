@@ -76,8 +76,9 @@ public class FXMLInterpreterProfileSceneController implements Initializable {
             interpreterList.add(
                     new Interpreter(
                             emailTextField.getText(),
-                            genderTextField.getText(),
+                            genderTextField.getText(),                   
                             Integer.parseInt(phoneNumberTextField.getText()),
+                            dobDatePicker.getValue().format(DateTimeFormatter.ISO_DATE),
                             nameTextField.getText(),
                             Integer.parseInt(idTextField.getText()),
                             "Interpreter",
