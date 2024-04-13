@@ -13,9 +13,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -64,8 +67,21 @@ public class FXMLInterpreterMainSceneController implements Initializable {
     }
 
     @FXML
-    private void exitOnAction(ActionEvent event) {
-        System.exit(0);
+    private void exitOnAction(ActionEvent event) throws IOException {
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    
+        // Close the present scene
+        currentStage.close();
+
+        
+        Parent fileChooserView = FXMLLoader.load(getClass().getResource("FXMLLoginScene.fxml"));
+        
+        Scene fileChooserView2 = new Scene(fileChooserView);
+        
+        Stage newWindow = new Stage();
+        
+        newWindow.setScene(fileChooserView2);
+        newWindow.show();
     }
     
     private void loadPage(String page){
