@@ -58,7 +58,7 @@ public class FXMLInterpreterMainSceneController implements Initializable {
 
     @FXML
     private void translateDocumentsOnAction(ActionEvent event) {
-        loadPage("FXMLInterpreterTranslatDocumentsScene-1");
+        loadPage("FXMLInterpreterTranslatDocumentsScene");
     }
 
     @FXML
