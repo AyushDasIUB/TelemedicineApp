@@ -100,8 +100,25 @@ public class FXMLNurseAssignedPatientsSceneController implements Initializable {
     }    
 
     @FXML
-    private void contactPatientOnAction(ActionEvent event) {
+    private void contactPatientOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("FXMLNurseAndPatientCommunicationScene.fxml"));
+        Parent personViewParent = loader.load();
+
+        //Parent personViewParent = FXMLLoader.load(getClass().getResource("FXMLScene2.fxml"));
+        Scene personViewScene = new Scene(personViewParent);
         
+        //access the controller
+        FXMLNurseAndPatientCommunicationSceneController controller = loader.getController();
+        //PersonViewSceneController controller = new PersonViewSceneController();
+        //Person rahim = new Person();
+        //controller.initData(rahim);
+        controller.initData(assignedPatientTableView.getSelectionModel().getSelectedItem());
+                
+        
+        Stage window = new Stage();
+        window.setScene(personViewScene);
+        window.show();
         
         
         
