@@ -126,8 +126,7 @@ public class FXMLNurseAssignedPatientsSceneController implements Initializable {
         //controller.initData(rahim);
         controller.initData(assignedPatientTableView.getSelectionModel().getSelectedItem());
                 
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        
+        Stage window = new Stage();
         window.setScene(personViewScene);
         window.show();
         
@@ -139,7 +138,34 @@ public class FXMLNurseAssignedPatientsSceneController implements Initializable {
     }
 
     @FXML
-    private void writeReportOnAction(ActionEvent event) {
+    private void writeReportOnAction(ActionEvent event) throws IOException {
+        
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("FXMLNurseReportWritingScene.fxml"));
+        Parent personViewParent = loader.load();
+
+        //Parent personViewParent = FXMLLoader.load(getClass().getResource("FXMLScene2.fxml"));
+        Scene personViewScene = new Scene(personViewParent);
+        
+        //access the controller
+        FXMLNurseReportWritingSceneController controller = loader.getController();
+      
+        controller.initData(assignedPatientTableView.getSelectionModel().getSelectedItem());
+                
+        //Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Stage window = new Stage();
+        
+        window.setScene(personViewScene);
+        window.show();
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
     
 }
