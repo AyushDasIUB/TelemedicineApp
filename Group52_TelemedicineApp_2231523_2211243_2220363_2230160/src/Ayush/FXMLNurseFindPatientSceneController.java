@@ -17,6 +17,8 @@ import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -143,7 +145,10 @@ public class FXMLNurseFindPatientSceneController implements Initializable {
             }
             
             
-            
+        Alert a = new Alert(AlertType.INFORMATION);
+        a.setContentText("Patient assigned successfully!");
+        a.showAndWait();
+        return;    
             
             
         
