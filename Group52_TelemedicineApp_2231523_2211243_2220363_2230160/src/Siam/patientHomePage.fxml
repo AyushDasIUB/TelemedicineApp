@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="672.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Siam.PatientHomePageController">
+   <children>
+      <Button layoutX="34.0" layoutY="32.0" mnemonicParsing="false" text="Home" />
+      <Button layoutX="106.0" layoutY="32.0" mnemonicParsing="false" text="Pharmacy" />
+      <Button layoutX="202.0" layoutY="32.0" mnemonicParsing="false" text="Health package" />
+      <Button layoutX="394.0" layoutY="168.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="165.0" text="Book an appointment" />
+      <Button layoutX="336.0" layoutY="32.0" mnemonicParsing="false" text="Appointments" />
+      <Button layoutX="420.0" layoutY="287.0" mnemonicParsing="false" text="Appoint nurse" />
+      <Button layoutX="463.0" layoutY="32.0" mnemonicParsing="false" text="Family members" />
+      <Button layoutX="38.0" layoutY="82.0" mnemonicParsing="false" text="Guided programs" />
+      <Button layoutX="187.0" layoutY="82.0" mnemonicParsing="false" text="Nearby Hospitals" />
+      <Label layoutX="51.0" layoutY="190.0" text="Name: " />
+      <Label layoutX="57.0" layoutY="233.0" text="Age: " />
+      <Label layoutX="58.0" layoutY="283.0" text="Sex: " />
+      <TextField layoutX="109.0" layoutY="185.0" />
+      <TextField layoutX="109.0" layoutY="229.0" />
+      <TextField layoutX="109.0" layoutY="277.0" />
+      <Line endX="-465.5" endY="-92.0" layoutX="475.0" layoutY="216.0" startX="167.0" startY="-92.0" />
+   </children>
+</AnchorPane>
