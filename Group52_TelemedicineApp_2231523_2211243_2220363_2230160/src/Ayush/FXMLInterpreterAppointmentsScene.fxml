@@ -8,24 +8,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #cbe7f1;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #cbe7f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ayush.FXMLInterpreterAppointmentsSceneController">
    <children>
       <Label layoutX="206.0" layoutY="76.0" text="All Appointments">
          <font>
             <Font name="Bell MT" size="26.0" />
          </font>
       </Label>
-      <TableView layoutX="28.0" layoutY="135.0" prefHeight="200.0" prefWidth="554.0">
+      <TableView fx:id="appointmentTableView" layoutX="28.0" layoutY="135.0" prefHeight="200.0" prefWidth="554.0">
         <columns>
-          <TableColumn prefWidth="102.0" text="C1" />
-          <TableColumn prefWidth="134.0" text="C2" />
-            <TableColumn prefWidth="107.0" text="Column X" />
-            <TableColumn prefWidth="78.0" text="Column X" />
-            <TableColumn prefWidth="132.0" text="Column X" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="102.0" text="Name" />
+          <TableColumn fx:id="idTableColumn" prefWidth="92.0" text="ID" />
+            <TableColumn fx:id="categoryTableColumn" prefWidth="77.0" text="Category" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="115.0" text="Appointment Date" />
+            <TableColumn fx:id="emailTableColumn" prefWidth="167.0" text="Email" />
         </columns>
       </TableView>
-      <Button layoutX="380.0" layoutY="355.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="185.0" style="-fx-background-radius: 20px; -fx-background-color: #cbe7f1; -fx-border-color: #152f54; -fx-border-radius: 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Join Session" textFill="#152f54">
+      <Button layoutX="380.0" layoutY="355.0" mnemonicParsing="false" onAction="#joinSessionButtonOnAction" prefHeight="39.0" prefWidth="185.0" style="-fx-background-radius: 20px; -fx-background-color: #cbe7f1; -fx-border-color: #152f54; -fx-border-radius: 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Join Session" textFill="#152f54">
          <font>
             <Font name="Berlin Sans FB" size="18.0" />
          </font>
@@ -33,7 +32,7 @@
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button layoutX="164.0" layoutY="355.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="185.0" style="-fx-background-radius: 20px; -fx-background-color: #cbe7f1; -fx-border-color: #152f54; -fx-border-radius: 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Messaging" textFill="#152f54">
+      <Button layoutX="164.0" layoutY="355.0" mnemonicParsing="false" onAction="#messagingButtonOnAction" prefHeight="39.0" prefWidth="185.0" style="-fx-background-radius: 20px; -fx-background-color: #cbe7f1; -fx-border-color: #152f54; -fx-border-radius: 20px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 10, 0.3), 10, 0, 10, 10);" text="Messaging" textFill="#152f54">
          <font>
             <Font name="Berlin Sans FB" size="18.0" />
          </font>

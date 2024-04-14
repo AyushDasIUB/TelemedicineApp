@@ -16,7 +16,6 @@ import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -25,7 +24,7 @@ import javafx.scene.control.TextField;
  *
  * @author dasay
  */
-public class FXMLNurseAndPatientCommunicationSceneController implements Initializable {
+public class FXMLInterpreterMessagingSceneController implements Initializable {
 
     @FXML
     private TextArea chatBoxTextArea;
@@ -37,7 +36,6 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
     /**
      * Initializes the controller class.
      */
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -47,7 +45,7 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
             FileWriter fw=null;
             try {
                 
-                File f = new File("CommunicationWithNurseAnd"+fileName+"Text.txt");
+                File f = new File("CommunicationWithInterpreterAnd"+fileName+"Text.txt");
                  
                 
                 if(f.exists())
@@ -55,7 +53,7 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
                     fw = new FileWriter(f,true);
                 else 
                     
-                    fw = new FileWriter("CommunicationWithNurseAnd"+fileName+"Text.txt"); 
+                    fw = new FileWriter("CommunicationWithInterpreterAnd"+fileName+"Text.txt"); 
                 //String str=nursemessageTextArea.getText();
                 //for(Student s: studArr){
                     //str += s.getId()+","+s.getName()+","+s.getCgpa()+"\n";
@@ -73,7 +71,7 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
         
         
         //File Reading
-        File file = new File("CommunicationWithNurseAnd"+fileName+"Text.txt");
+        File file = new File("CommunicationWithInterpreterAnd"+fileName+"Text.txt");
         Scanner sc; String str=null;
         try {
             sc = new Scanner(file);
@@ -90,10 +88,6 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FXMLNurseAndPatientCommunicationSceneController.class.getName()).log(Level.SEVERE, null, ex);
         } 
- 
-        
-        
-        
         
         
         
@@ -110,7 +104,7 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
             try {
                 //write code to dump studArr in Stud.txt
                 //use FileWriter
-                File f = new File("CommunicationWithNurseAnd"+fileName+"Text.txt");
+                File f = new File("CommunicationWithInterpreterAnd"+fileName+"Text.txt");
                  
                 //FileWriter fw = new FileWriter(f);
                 if(f.exists())
@@ -118,8 +112,8 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
                     fw = new FileWriter(f,true);
                 else 
                     //fw = new FileWriter(f);
-                    fw = new FileWriter("CommunicationWithNurseAnd"+fileName+"Text.txt"); 
-                String str="Nurse: "+nursemass+"\n";
+                    fw = new FileWriter("CommunicationWithInterpreterAnd"+fileName+"Text.txt"); 
+                String str="Interpreter: "+nursemass+"\n";
 //                for(Student s: studArr){
 //                    str += s.getId()+","+s.getName()+","+s.getCgpa()+"\n";
 //                    //str += s; 
@@ -133,7 +127,7 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
                 //SHOW ex.toString() IN AN ALERT
             }    
         
-        File file = new File("CommunicationWithNurseAnd"+fileName+"Text.txt");
+        File file = new File("CommunicationWithInterpreterAnd"+fileName+"Text.txt");
         Scanner sc; String str=null;
         try {
             sc = new Scanner(file);
@@ -150,14 +144,13 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FXMLNurseAndPatientCommunicationSceneController.class.getName()).log(Level.SEVERE, null, ex);
         }
-       
         
     }
 
     @FXML
     private void refreshButtonOnAction(ActionEvent event) {
         String fileName = patientNameTextField.getText();
-        File file = new File("CommunicationWithNurseAnd"+fileName+"Text.txt");
+        File file = new File("CommunicationWithInterpreterAnd"+fileName+"Text.txt");
         Scanner sc; String str=null;
         try {
             sc = new Scanner(file);
@@ -175,14 +168,9 @@ public class FXMLNurseAndPatientCommunicationSceneController implements Initiali
             Logger.getLogger(FXMLNurseAndPatientCommunicationSceneController.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        
-        
-        
-        
-        
     }
 
-    void initData(DummyTableFindPatientClass selectedItem) {
+    void initData(DummyTableAppointments selectedItem) {
         patientNameTextField.setText(selectedItem.getName());
     }
     
