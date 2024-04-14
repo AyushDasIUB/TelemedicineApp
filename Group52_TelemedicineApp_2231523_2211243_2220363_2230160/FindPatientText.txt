@@ -1,0 +1,10 @@
+John Doe,123456789,Male,Allergies,1985-07-15,john.doe@example.com
+Jane Smith,987654321,Female,Asthma,1979-03-24,jane.smith@example.com
+Michael Johnson,456123789,Male,High Cholesterol,1992-11-05,michael.johnson@example.com
+Emily Williams,654789321,Female,High Blood Pressure,1988-09-12,emily.williams@example.com
+Christopher Brown,321987654,Male,Diabetes,1983-05-28,christopher.brown@example.com
+Amanda Taylor,789321654,Female,Anxiety,1995-01-10,amanda.taylor@example.com
+David Martinez,456852147,Male,Arthritis,1976-12-03,david.martinez@example.com
+Stephanie Garcia,852369741,Female,Depression,1980-08-20,stephanie.garcia@example.com
+Matthew Nguyen,369147852,Male,High Blood Pressure,1990-04-17,matthew.nguyen@example.com
+Ashley Rodriguez,147963852,Female,High Cholesterol,1987-06-29,ashley.rodriguez@example.com
