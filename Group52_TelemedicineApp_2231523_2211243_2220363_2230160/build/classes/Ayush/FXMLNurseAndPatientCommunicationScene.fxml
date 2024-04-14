@@ -31,6 +31,9 @@
             <Font name="Bell MT" size="14.0" />
          </font>
       </Button>
-      <TextField fx:id="patientNameTextField" editable="false" layoutX="347.0" layoutY="38.0" style="-fx-background-color: transperent;" />
+      <TextField fx:id="patientNameTextField" editable="false" layoutX="340.0" layoutY="31.0" style="-fx-background-color: transperent;">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></TextField>
    </children>
 </AnchorPane>
