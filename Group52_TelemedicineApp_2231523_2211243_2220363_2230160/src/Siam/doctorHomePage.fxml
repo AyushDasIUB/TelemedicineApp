@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="773.0" style="-fx-background-color: #a9a9a9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Siam.DoctorHomePageController">
+   <children>
+      <AnchorPane layoutX="-6.0" prefHeight="410.0" prefWidth="311.0" style="-fx-background-color: #c0c0c0;">
+         <children>
+            <Button layoutX="11.0" layoutY="3.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="292.0" style="-fx-background-color: #708090;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="11.0" layoutY="66.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="292.0" style="-fx-background-color: #708090;" text="Appointments" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="12.0" layoutY="129.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="292.0" style="-fx-background-color: #708090;" text="Patients" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="11.0" layoutY="192.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="292.0" style="-fx-background-color: #708090;" text="Transfer" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="11.0" layoutY="255.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="292.0" style="-fx-background-color: #708090;" text="Support" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="100.0" layoutY="327.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="139.0" style="-fx-background-color: #dc143c;" text="Sign Out" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="329.0" layoutY="26.0" text="Name: " />
+      <Label layoutX="385.0" layoutY="22.0" prefHeight="28.0" prefWidth="165.0" style="-fx-background-color: #b0c4de;" />
+      <Label layoutX="332.0" layoutY="63.0" text="Age: " />
+      <Label layoutX="385.0" layoutY="59.0" prefHeight="28.0" prefWidth="165.0" style="-fx-background-color: #b0c4de;" />
+      <Label layoutX="330.0" layoutY="101.0" text="Gender: " />
+      <Label layoutX="386.0" layoutY="97.0" prefHeight="28.0" prefWidth="165.0" style="-fx-background-color: #b0c4de;" />
+      <Label alignment="CENTER" layoutX="610.0" layoutY="17.0" prefHeight="188.0" prefWidth="149.0" style="-fx-background-color: #c0c0c0;" text="Picture" />
+   </children>
+</AnchorPane>
