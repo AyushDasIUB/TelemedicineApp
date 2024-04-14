@@ -96,7 +96,25 @@ public class FXMLLoginSceneController implements Initializable {
                             window.setScene(scene);
                             window.show();                         
                     }
-                    
+                    if("Delivery Guy".equals(tokens[2])){
+                            Parent mainSceneParent = FXMLLoader.load(getClass().getResource("/Natasha/FXMLDeliveryGuyDashBoard.fxml"));
+        
+                            Scene scene = new Scene(mainSceneParent);
+
+                            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                            window.setScene(scene);
+                            window.show();                         
+                    }
+                    if("Pharmaceutical Representative".equals(tokens[2])){
+                            Parent mainSceneParent = FXMLLoader.load(getClass().getResource("/Natasha/FXMLPharmaceuticalRepresentativeDashboard.fxml"));
+        
+                            Scene scene = new Scene(mainSceneParent);
+
+                            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                            window.setScene(scene);
+                            window.show();                         
+                    }
+//                    
                 
                 }               
 
