@@ -96,7 +96,7 @@ public class FXMLInterpreterSetAvailabilitySceneController implements Initializa
                 for (Interpreter i: interpreterActiveList){
                        interPreterTableView.getItems().add(i);
                 }
-                
+    
                 
                 
                 
