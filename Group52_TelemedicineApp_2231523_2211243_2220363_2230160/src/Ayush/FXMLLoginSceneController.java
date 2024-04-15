@@ -114,7 +114,27 @@ public class FXMLLoginSceneController implements Initializable {
                             window.setScene(scene);
                             window.show();                         
                     }
-//                    
+                    
+                    if("Patient".equals(tokens[2])){
+                            Parent mainSceneParent = FXMLLoader.load(getClass().getResource("/Siam/patientHomePage.fxml"));
+        
+                            Scene scene = new Scene(mainSceneParent);
+
+                            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                            window.setScene(scene);
+                            window.show();                         
+                    }
+                    
+                    if("Doctor".equals(tokens[2])){
+                            Parent mainSceneParent = FXMLLoader.load(getClass().getResource("/Siam/doctorHomePage.fxml"));
+        
+                            Scene scene = new Scene(mainSceneParent);
+
+                            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                            window.setScene(scene);
+                            window.show();                         
+                    }
+                    
                 
                 }               
 
