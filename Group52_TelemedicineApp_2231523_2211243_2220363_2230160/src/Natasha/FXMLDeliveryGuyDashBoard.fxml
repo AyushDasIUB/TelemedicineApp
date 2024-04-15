@@ -5,20 +5,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="842.0" prefWidth="1131.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="661.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyDashBoardController">
    <children>
-      <Label layoutX="435.0" layoutY="42.0" prefHeight="35.0" prefWidth="224.0" text="Delivery Dashboard">
+      <Label layoutX="219.0" layoutY="45.0" prefHeight="35.0" prefWidth="224.0" text="Delivery Dashboard">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="128.0" layoutY="135.0" mnemonicParsing="false" onAction="#profileButton" text="Profile" />
-      <Button layoutX="129.0" layoutY="220.0" mnemonicParsing="false" onAction="#timeScheduleButton" text="Time Shedule" />
-      <Button layoutX="128.0" layoutY="317.0" mnemonicParsing="false" onAction="#checkOrderListButton" text="Check Order List" />
-      <Button layoutX="125.0" layoutY="414.0" mnemonicParsing="false" onAction="#orderTrackingButton" text="Order Tracking" />
-      <Button layoutX="126.0" layoutY="520.0" mnemonicParsing="false" onAction="#navigationButton" text="Navigation" />
-      <Button layoutX="126.0" layoutY="622.0" mnemonicParsing="false" onAction="#paymentButton" text="Payment" />
-      <Button layoutX="128.0" layoutY="737.0" mnemonicParsing="false" onAction="#logOutButton" text="Log Out" />
+      <Button layoutX="306.0" layoutY="101.0" mnemonicParsing="false" onAction="#profileButton" text="Profile" />
+      <Button layoutX="287.0" layoutY="142.0" mnemonicParsing="false" onAction="#timeScheduleButton" text="Time Shedule" />
+      <Button layoutX="279.0" layoutY="181.0" mnemonicParsing="false" onAction="#checkOrderListButton" text="Check Order List" />
+      <Button layoutX="284.0" layoutY="225.0" mnemonicParsing="false" onAction="#orderTrackingButton" text="Order Tracking" />
+      <Button layoutX="295.0" layoutY="274.0" mnemonicParsing="false" onAction="#navigationButton" text="Navigation" />
+      <Button layoutX="300.0" layoutY="315.0" mnemonicParsing="false" onAction="#paymentButton" text="Payment" />
+      <Button layoutX="303.0" layoutY="356.0" mnemonicParsing="false" onAction="#logOutButton" text="Log Out" />
    </children>
 </AnchorPane>

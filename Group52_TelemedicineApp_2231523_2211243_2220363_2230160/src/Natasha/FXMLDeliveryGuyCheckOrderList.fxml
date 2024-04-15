@@ -7,15 +7,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1015.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1015.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyCheckOrderListController">
    <children>
       <Label layoutX="371.0" layoutY="56.0" prefHeight="51.0" prefWidth="197.0" text="Check Order List">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TableView layoutX="191.0" layoutY="234.0" prefHeight="281.0" prefWidth="538.0">
+      <TableView layoutX="207.0" layoutY="233.0" prefHeight="281.0" prefWidth="538.0">
         <columns>
           <TableColumn fx:id="orderIdTableColumn" prefWidth="179.0" text="Order Id" />
           <TableColumn fx:id="customerNameTableColumn" prefWidth="189.0" text="Customer Name" />

@@ -6,22 +6,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="771.0" prefWidth="1005.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="638.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLPharmaceuticalRepresentativePaymentProcessController">
    <children>
-      <Label layoutX="369.0" layoutY="60.0" prefHeight="35.0" prefWidth="204.0" text="Payment Process">
+      <Label layoutX="217.0" layoutY="58.0" prefHeight="35.0" prefWidth="204.0" text="Payment Process">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="187.0" layoutY="187.0" text="Customer Name:" />
-      <Label layoutX="187.0" layoutY="294.0" text="Address:" />
-      <Label layoutX="187.0" layoutY="427.0" text="Total Amount:" />
-      <Label layoutX="187.0" layoutY="555.0" text="Payment Type:" />
-      <Button layoutX="592.0" layoutY="697.0" mnemonicParsing="false" onAction="#confirmPaymentButton" text="Confirm Payment" />
-      <TextField fx:id="customerNameTextField" layoutX="325.0" layoutY="182.0" />
-      <TextField fx:id="addressTextField" layoutX="325.0" layoutY="289.0" />
-      <TextField fx:id="totalAmountTextField" layoutX="325.0" layoutY="422.0" />
-      <TextField fx:id="paymentTypeTextField" layoutX="316.0" layoutY="550.0" />
+      <Label layoutX="100.0" layoutY="117.0" text="Customer Name:" />
+      <Label layoutX="100.0" layoutY="163.0" text="Address:" />
+      <Label layoutX="100.0" layoutY="199.0" text="Total Amount:" />
+      <Label layoutX="99.0" layoutY="240.0" text="Payment Type:" />
+      <Button layoutX="432.0" layoutY="291.0" mnemonicParsing="false" onAction="#confirmPaymentButton" text="Confirm Payment" />
+      <TextField fx:id="customerNameTextField" layoutX="238.0" layoutY="112.0" />
+      <TextField fx:id="addressTextField" layoutX="238.0" layoutY="158.0" />
+      <TextField fx:id="totalAmountTextField" layoutX="238.0" layoutY="194.0" />
+      <TextField fx:id="paymentTypeTextField" layoutX="228.0" layoutY="235.0" />
    </children>
 </AnchorPane>
