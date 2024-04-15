@@ -4,7 +4,6 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -22,16 +21,14 @@
       <TextField fx:id="PhoneTextField" layoutX="227.0" layoutY="309.0" />
       <TextField fx:id="IdTextField" layoutX="227.0" layoutY="183.0" />
       <TextField fx:id="NameTextField" layoutX="227.0" layoutY="137.0" />
-      <RadioButton layoutX="227.0" layoutY="273.0" mnemonicParsing="false" text="Male" />
-      <RadioButton layoutX="293.0" layoutY="274.0" mnemonicParsing="false" text="Female" />
-      <RadioButton layoutX="375.0" layoutY="274.0" mnemonicParsing="false" text="Others" />
       <PasswordField fx:id="PassworldTextField" layoutX="227.0" layoutY="402.0" />
       <Label layoutX="189.0" layoutY="60.0" prefHeight="54.0" prefWidth="236.0" text="Manage Your Profile">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="SaveButton" layoutX="264.0" layoutY="458.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="113.0" text="Save" />
+      <Button layoutX="264.0" layoutY="458.0" mnemonicParsing="false" onAction="#saveButtonOnAction" prefHeight="54.0" prefWidth="113.0" text="Save" />
       <DatePicker fx:id="DobPicker" layoutX="227.0" layoutY="356.0" />
+      <TextField fx:id="genderTextField" layoutX="227.0" layoutY="269.0" />
    </children>
 </AnchorPane>
