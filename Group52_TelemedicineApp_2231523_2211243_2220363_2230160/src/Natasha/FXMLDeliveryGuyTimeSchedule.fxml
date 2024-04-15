@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="799.0" prefWidth="1104.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Natasha.FXMLDeliveryGuyTimeScheduleController">
+<AnchorPane id="AnchorPane" prefHeight="799.0" prefWidth="1104.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyTimeScheduleController">
    <children>
       <Label layoutX="397.0" layoutY="52.0" prefHeight="35.0" prefWidth="173.0" text="Time Schedule">
          <font>

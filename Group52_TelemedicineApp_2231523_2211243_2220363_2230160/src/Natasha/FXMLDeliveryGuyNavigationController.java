@@ -37,6 +37,10 @@ public class FXMLDeliveryGuyNavigationController implements Initializable {
 
     @FXML
     private void navigationButton(ActionEvent event) {
+
+
+
+
     }
     
 }

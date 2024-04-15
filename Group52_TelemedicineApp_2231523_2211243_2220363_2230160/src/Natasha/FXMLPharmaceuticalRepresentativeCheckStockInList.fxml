@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="764.0" prefWidth="1061.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeCheckStockInListController">
+<AnchorPane id="AnchorPane" prefHeight="764.0" prefWidth="1061.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeCheckStockInListController">
    <children>
       <Label layoutX="377.0" layoutY="69.0" prefHeight="21.0" prefWidth="213.0" text="Check Stock In List">
          <font>

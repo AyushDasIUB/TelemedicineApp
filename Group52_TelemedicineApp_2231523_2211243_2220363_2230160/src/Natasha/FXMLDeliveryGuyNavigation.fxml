@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="816.0" prefWidth="1144.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Natasha.FXMLDeliveryGuyNavigationController">
+<AnchorPane id="AnchorPane" prefHeight="816.0" prefWidth="1144.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyNavigationController">
    <children>
       <Label layoutX="449.0" layoutY="55.0" prefHeight="37.0" prefWidth="136.0" text="Navigation">
          <font>
