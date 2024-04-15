@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -53,14 +54,16 @@
             </Button>
          </children>
       </AnchorPane>
-      <TableView layoutX="320.0" layoutY="112.0" prefHeight="280.0" prefWidth="433.0">
+      <TextField layoutX="545.0" layoutY="85.0" />
+      <Label layoutX="392.0" layoutY="88.0" text="Search Patient Name : " />
+      <Button layoutX="545.0" layoutY="135.0" mnemonicParsing="false" text="Add" />
+      <TableView layoutX="344.0" layoutY="198.0" prefHeight="300.0" prefWidth="378.0">
         <columns>
-          <TableColumn prefWidth="139.0" text="Doctor name" />
-            <TableColumn minWidth="0.0" prefWidth="197.0" text="Appointment time" />
-            <TableColumn minWidth="0.0" prefWidth="117.0" text="Status" />
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+          <TableColumn prefWidth="377.0" text="Members" />
         </columns>
       </TableView>
-      <Label layoutX="479.0" layoutY="37.0" text="Appointments">
+      <Label layoutX="460.0" layoutY="32.0" text="Family members">
          <font>
             <Font size="18.0" />
          </font>
