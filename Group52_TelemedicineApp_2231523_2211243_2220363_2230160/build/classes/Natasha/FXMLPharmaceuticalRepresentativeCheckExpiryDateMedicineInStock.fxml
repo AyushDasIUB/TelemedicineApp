@@ -6,15 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="758.0" prefWidth="1094.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeCheckExpiryDateMedicineInStockController">
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="812.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeCheckExpiryDateMedicineInStockController">
    <children>
-      <Label layoutX="319.0" layoutY="61.0" prefHeight="35.0" prefWidth="426.0" text="Check Expiry Date Medicine In Stock">
+      <Label layoutX="181.0" layoutY="50.0" prefHeight="35.0" prefWidth="426.0" text="Check Expiry Date Medicine In Stock">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TableView layoutX="183.0" layoutY="209.0" prefHeight="334.0" prefWidth="729.0">
+      <TableView layoutX="29.0" layoutY="115.0" prefHeight="334.0" prefWidth="729.0">
         <columns>
           <TableColumn fx:id="productNameTableColumn" prefWidth="117.0" text="Product Name" />
           <TableColumn fx:id="quantityTableColumn" prefWidth="132.0" text="Quantity" />

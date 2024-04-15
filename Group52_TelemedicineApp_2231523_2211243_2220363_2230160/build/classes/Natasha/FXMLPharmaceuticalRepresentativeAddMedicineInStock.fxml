@@ -6,23 +6,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="821.0" prefWidth="1125.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeAddMedicineInStockController">
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="737.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeAddMedicineInStockController">
    <children>
-      <Label layoutX="421.0" layoutY="84.0" prefHeight="34.0" prefWidth="276.0" text="Add Medicine In Stock">
+      <Label layoutX="231.0" layoutY="71.0" prefHeight="34.0" prefWidth="276.0" text="Add Medicine In Stock">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="180.0" layoutY="222.0" text="Medicine Name:" />
-      <Label layoutX="180.0" layoutY="327.0" text="Quantity:" />
-      <Label layoutX="180.0" layoutY="440.0" text="Location:" />
-      <Label layoutX="180.0" layoutY="560.0" text="Update Date:" />
-      <TextField fx:id="medicineTextField" layoutX="362.0" layoutY="217.0" />
-      <TextField fx:id="quantityTextField" layoutX="362.0" layoutY="312.0" />
-      <TextField fx:id="locationTextField" layoutX="362.0" layoutY="435.0" />
-      <TextField fx:id="updateDateTextField" layoutX="362.0" layoutY="555.0" />
-      <Button layoutX="549.0" layoutY="677.0" mnemonicParsing="false" onAction="#addButton" prefHeight="39.0" prefWidth="87.0" text="Add">
+      <Label layoutX="108.0" layoutY="138.0" text="Medicine Name:" />
+      <Label layoutX="108.0" layoutY="196.0" text="Quantity:" />
+      <Label layoutX="115.0" layoutY="230.0" text="Location:" />
+      <Label layoutX="108.0" layoutY="272.0" text="Update Date:" />
+      <TextField fx:id="medicineTextField" layoutX="290.0" layoutY="133.0" />
+      <TextField fx:id="quantityTextField" layoutX="290.0" layoutY="181.0" />
+      <TextField fx:id="locationTextField" layoutX="297.0" layoutY="225.0" prefHeight="25.0" prefWidth="307.0" />
+      <TextField fx:id="updateDateTextField" layoutX="290.0" layoutY="267.0" />
+      <Button layoutX="487.0" layoutY="327.0" mnemonicParsing="false" onAction="#addButton" prefHeight="39.0" prefWidth="87.0" text="Add">
          <font>
             <Font size="18.0" />
          </font>

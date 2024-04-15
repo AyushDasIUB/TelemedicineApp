@@ -7,14 +7,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="849.0" prefWidth="1140.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyOrderTrackingController">
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="670.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyOrderTrackingController">
    <children>
-      <Label layoutX="432.0" layoutY="54.0" prefHeight="35.0" prefWidth="182.0" text="Order Tracking">
+      <Label layoutX="234.0" layoutY="46.0" prefHeight="35.0" prefWidth="182.0" text="Order Tracking">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TableView layoutX="241.0" layoutY="235.0" prefHeight="357.0" prefWidth="587.0">
+      <TableView fx:id="orderTracking" layoutX="39.0" layoutY="124.0" prefHeight="357.0" prefWidth="587.0">
         <columns>
           <TableColumn fx:id="orderIdTableColumn" prefWidth="153.0" text="Order Id" />
           <TableColumn fx:id="customerNameTableColumn" prefWidth="148.0" text="Customer Name" />
@@ -22,6 +22,6 @@
             <TableColumn fx:id="statusTableColumn" prefWidth="146.0" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="502.0" layoutY="685.0" mnemonicParsing="false" onAction="#refreshButton" text="Refresh" />
+      <Button layoutX="305.0" layoutY="509.0" mnemonicParsing="false" onAction="#refreshButton" text="Refresh" />
    </children>
 </AnchorPane>

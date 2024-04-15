@@ -7,14 +7,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="816.0" prefWidth="1144.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyNavigationController">
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="978.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyNavigationController">
    <children>
-      <Label layoutX="449.0" layoutY="55.0" prefHeight="37.0" prefWidth="136.0" text="Navigation">
+      <Label layoutX="413.0" layoutY="21.0" prefHeight="37.0" prefWidth="136.0" text="Navigation">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TableView layoutX="88.0" layoutY="178.0" prefHeight="388.0" prefWidth="919.0">
+      <TableView fx:id="navigationTableView" layoutX="32.0" layoutY="77.0" prefHeight="388.0" prefWidth="919.0">
         <columns>
           <TableColumn fx:id="customerNameTableColumn" prefWidth="225.0" text="Customer Name" />
           <TableColumn fx:id="deliveryAddressTableColumn" prefWidth="239.0" text="Delivery Address" />
@@ -22,6 +22,6 @@
             <TableColumn fx:id="durationTableColumn" prefWidth="231.0" text="Duration" />
         </columns>
       </TableView>
-      <Button layoutX="515.0" layoutY="661.0" mnemonicParsing="false" onAction="#navigationButton" text="Navigation" />
+      <Button layoutX="455.0" layoutY="484.0" mnemonicParsing="false" onAction="#navigationButton" text="Navigation" />
    </children>
 </AnchorPane>

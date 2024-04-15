@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="749.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyPaymentProcessController">
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="749.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLDeliveryGuyPaymentProcessController">
    <children>
       <Label layoutX="299.0" layoutY="59.0" prefHeight="35.0" prefWidth="207.0" text="Payment Process">
          <font>
@@ -25,8 +25,8 @@
       <TextField fx:id="selectPaymentMethodTextField" layoutX="370.0" layoutY="309.0" />
       <RadioButton layoutX="374.0" layoutY="350.0" mnemonicParsing="false" onAction="#creditCardRadioButton" text="Credit Card" />
       <RadioButton layoutX="376.0" layoutY="380.0" mnemonicParsing="false" onAction="#debitCardRadioButton" text="Debit Card" />
-      <RadioButton layoutX="374.0" layoutY="414.0" mnemonicParsing="false" onAction="#PaypalRadioButton" text="Paypal" />
-      <RadioButton layoutX="373.0" layoutY="443.0" mnemonicParsing="false" onAction="#cashRadioButton" text="Cash" />
+      <RadioButton layoutX="375.0" layoutY="417.0" mnemonicParsing="false" onAction="#PaypalRadioButton" text="Paypal" />
+      <RadioButton layoutX="380.0" layoutY="448.0" mnemonicParsing="false" onAction="#cashRadioButton" text="Cash" />
       <Button layoutX="635.0" layoutY="453.0" mnemonicParsing="false" onAction="#makePaymentButton" text="Make Payment" />
    </children>
 </AnchorPane>

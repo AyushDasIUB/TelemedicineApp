@@ -7,19 +7,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="856.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeTimeScheduleController">
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="735.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeTimeScheduleController">
    <children>
-      <Label layoutX="324.0" layoutY="43.0" prefHeight="38.0" prefWidth="174.0" text="Time Schedule">
+      <Label layoutX="265.0" layoutY="40.0" prefHeight="38.0" prefWidth="174.0" text="Time Schedule">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TableView layoutX="208.0" layoutY="161.0" prefHeight="225.0" prefWidth="427.0">
+      <TableView fx:id="timeScheduleTable" layoutX="154.0" layoutY="93.0" prefHeight="225.0" prefWidth="427.0">
         <columns>
           <TableColumn fx:id="dayTableColumn" prefWidth="207.0" text="Day" />
           <TableColumn fx:id="timeSlotTableColumn" prefWidth="219.0" text="Time Slot" />
         </columns>
       </TableView>
-      <Button layoutX="379.0" layoutY="453.0" mnemonicParsing="false" onAction="#loadScheduleButton" text="Load Schedule" />
+      <Button layoutX="321.0" layoutY="363.0" mnemonicParsing="false" onAction="#loadScheduleButton" text="Load Schedule" />
    </children>
 </AnchorPane>
