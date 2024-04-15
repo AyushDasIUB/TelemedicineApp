@@ -6,15 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="1075.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeCheckOrderListController">
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="850.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLPharmaceuticalRepresentativeCheckOrderListController">
    <children>
-      <Label layoutX="400.0" layoutY="60.0" prefHeight="28.0" prefWidth="211.0" text="Check Order List">
+      <Label layoutX="316.0" layoutY="63.0" prefHeight="28.0" prefWidth="211.0" text="Check Order List">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TableView layoutX="154.0" layoutY="247.0" prefHeight="372.0" prefWidth="780.0">
+      <TableView layoutX="31.0" layoutY="129.0" prefHeight="372.0" prefWidth="780.0">
         <columns>
           <TableColumn fx:id="orderIdTableColumn" prefWidth="157.0" text="Order Id" />
           <TableColumn fx:id="productNameTableColumn" prefWidth="179.0" text="Product Name" />

@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLPharmaceuticalRepresentativePaymentProcessController">
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="638.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Natasha.FXMLPharmaceuticalRepresentativePaymentProcessController">
    <children>
       <Label layoutX="217.0" layoutY="58.0" prefHeight="35.0" prefWidth="204.0" text="Payment Process">
          <font>
